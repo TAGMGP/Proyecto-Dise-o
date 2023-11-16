@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porsche 911 GT3</title>
+</head>
+<style>
+    body {
+        background-color: #f8f8fc;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .container {
+        padding: 2rem;
+    }
+
+    .slider-wrapper {
+        position: relative;
+        max-width: 48rem;
+        margin: 0 auto;
+    }
+
+    .slider {
+        display: flex;
+        aspect-ratio: 16/9;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        box-shadow: 0 1.5rem 3rem -0.75rem hsl(0, 0%, 22%);
+        border-radius: 0.5rem;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .slider::-webkit-scrollbar {
+        display: none;
+    }
+
+    .slider img {
+        flex: 1 0 100%;
+        scroll-snap-align: start;
+        object-fit: cover;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .slider-nav {
+        display: flex;
+        column-gap: 1rem;
+        position: absolute;
+        bottom: 1.25rem;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+
+    .slider-nav a {
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 50%;
+        background-color: #0c0c0c;
+        opacity: 0.75;
+        transition: opacity ease 250ms;
+    }
+
+    .slider-nav a:hover {
+        opacity: 1;
+    }
+</style>
+<body>
+
+    <section class="container">
+        <div class="slider-wrapper">
+            <div class="slider">
+                <img id="slide-1" src="Porsche 1.jpg" alt="Porsche" />
+                <img id="slide-2" src="Porsche 2.jpg" alt="Porsche" />
+                <img id="slide-3" src="Porsche 3.jpg" alt="Porsche" />
+
+            </div>
+            <div class="slider-nav">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
+            </div>
+        </div>
+        <h1>Historia del Porsche 911 GT3</h1>
+
+    <p>El Porsche 911 GT3 es un modelo emblemático de Porsche, conocido por su rendimiento excepcional y su participación en competiciones automovilísticas.</p>
+
+    <h2>Introducción:</h2>
+    <p>El Porsche 911 GT3 fue introducido como una versión de alto rendimiento del icónico Porsche 911, diseñado para ofrecer una experiencia de conducción deportiva pura.</p>
+
+    <h2>Desarrollo y Diseño:</h2>
+    <ul>
+        <li>El desarrollo del Porsche 911 GT3 comenzó con el objetivo de combinar la experiencia en competición de Porsche con un automóvil de calle.</li>
+        <li>El diseño se centró en la aerodinámica, la ligereza y la potencia para lograr un equilibrio óptimo.</li>
+    </ul>
+
+    <h2>Características Técnicas:</h2>
+    <ul>
+        <li>Equipado con motores de alto rendimiento y sistemas de suspensión afinados, el 911 GT3 ofrece una experiencia de conducción única.</li>
+        <li>La transmisión suele ser manual o de doble embrague, permitiendo a los conductores un mayor control sobre el vehículo.</li>
+    </ul>
+
+    <h2>Participación en Competición:</h2>
+    <p>El Porsche 911 GT3 ha participado y ha tenido un éxito notable en diversas competiciones automovilísticas, incluyendo carreras de resistencia y eventos de GT.</p>
+
+    <h2>Actualizaciones y Modelos Posteriores:</h2>
+    <p>A lo largo de los años, el 911 GT3 ha experimentado varias actualizaciones y Porsche ha lanzado modelos posteriores con mejoras en rendimiento y tecnología.</p>
+
+    <h2>Legado:</h2>
+    <p>El Porsche 911 GT3 es considerado un ícono en el mundo de los automóviles deportivos, apreciado por su combinación de elegancia, potencia y agilidad en la pista.</p>
+    </section>
+    
+</body>
+
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>ForCars</title>
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css'><link rel="stylesheet" href="style.css">
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Roboto:wght@300;400;500;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+main {
+  position: relative;
+  width: calc(min(90rem, 90%));
+  margin: 0 auto;
+  min-height: 100vh;
+  column-gap: 3rem;
+  padding-block: min(20vh, 3rem);
+}
+
+.bg {
+    width: 100%; 
+    height: auto; 
+    max-width: 1200px; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+main > div span {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 1rem;
+  color: #717171;
+}
+
+main > div h1 {
+  text-transform: capitalize;
+  letter-spacing: 0.8px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: clamp(3.4375rem, 3.25rem + 0.75vw, 4rem);
+  background-color: #005baa;
+  background-image: linear-gradient(45deg, #005baa, #000000);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+main > div hr {
+  display: block;
+  background: #005baa;
+  height: 0.25rem;
+  width: 6.25rem;
+  border: none;
+  margin: 1.125rem 0 1.875rem 0;
+}
+
+main > div p {
+  line-height: 1.6;
+}
+
+main a {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #717171;
+  font-weight: 500;
+  background: #fff;
+  border-radius: 3.125rem;
+  transition: 0.3s ease-in-out;
+}
+
+main > div > a {
+  border: 2px solid #c2c2c2;
+  margin-top: 2.188rem;
+  padding: 0.625rem 1.875rem;
+}
+
+main > div > a:hover {
+  border: 0.125rem solid #005baa;
+  color: #005baa;
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 3.125rem;
+}
+
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
+  background: #fff;
+}
+
+.swiper-pagination {
+  bottom: 1.25rem !important;
+}
+
+.swiper-slide {
+  width: 18.75rem;
+  height: 28.125rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: self-start;
+  border-radius: 15px
+}
+
+.swiper-slide h2 {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  margin-bottom: 0.625rem;
+  padding: 0 0 0 1.563rem;
+  text-transform: uppercase;
+}
+
+.swiper-slide p {
+  color: #dadada;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  padding: 0 1.563rem;
+  line-height: 1.6;
+  font-size: 0.75rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.swiper-slide a {
+  margin: 1.25rem 1.563rem 3.438rem 1.563rem;
+  padding: 0.438em 1.875rem;
+  font-size: 0.9rem;
+}
+
+.swiper-slide a:hover {
+  color: #005baa;
+}
+
+.swiper-slide div {
+  display: none;
+  opacity: 0;
+  padding-bottom: 0.625rem;
+}
+
+.swiper-slide-active div {
+  display: block;
+  opacity: 1;
+}
+
+.swiper-slide--one {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("f40.jpg") no-repeat 50% 50%/cover;
+}
+
+.swiper-slide--two {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("Subaru.jpg") no-repeat 50% 50%/cover;
+}
+
+.swiper-slide--three {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("Porsche.jpg") no-repeat 50% 50%/cover;
+}
+
+.swiper-slide--four {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("LaFerrari.jpg") no-repeat 50% 50%/cover;
+}
+
+.swiper-slide--five {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("Onix.jpg") no-repeat 50% 50%/cover;
+}
+
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right {
+  background-image: none;
+}
+
+@media screen and (min-width: 48rem) {
+  main {
+    display: flex;
+    align-items: center;
+  }
+
+  .bg,
+.bg2 {
+    opacity: 0.1;
+  }
+}
+@media screen and (min-width: 93.75rem) {
+  .swiper {
+    width: 85%;
+  }
+}
+  </style>
+</head>
+<body>
+
+<main>
+  <div>
+    <span>Tobias arambarry, genaro mezquita, gabriel petkovich</span>
+    <h1>ForoCars</h1>
+    <hr>
+    <p>¡En este foro descubrirás las fascinantes características de los automóviles más extraordinarios! Desde los deslumbrantes hiperautos y deportivos hasta los prácticos vehículos de uso diario.</p>
+  </div>
+  
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide swiper-slide--one">
+        <div>
+          <h2>Ferrari F40</h2>
+          <p>El Ferrari F40 es un automóvil superdeportivo berlinetta de dos puertas biplaza, producido por el fabricante de automóviles italiano Ferrari.</p>
+          <a href="Ferrari F40.html" target="_blank">info</a>
+        </div>
+      </div>
+      
+      <div class="swiper-slide swiper-slide--two">
+        <div>
+          <h2>Subaru</h2>
+          <p>El Subaru WRX STI es un coche deportivo de tamaño compacto, una berlina de 4 puertas potente, con una puesta a punto muy deportiva.</p>
+          <a href="Subaru.html" target="_blank">info</a>
+        </div>
+      </div>
+
+      <div class="swiper-slide swiper-slide--three">
+
+        <div>
+          <h2>Porsche 911 GT3</h2>
+          <p>Algunos lo llaman carpe diem, es decir, vivir el momento. Pero nosotros somos Porsche. Y es que este es nuestro lema para los nuevos modelos 911 GT3: carpe secundum, o lo que es lo mismo, disfrutar de cada segundo.</p>
+          <a href="Porsche.html" target="_blank">info</a>
+        </div>
+      </div>
+
+      <div class="swiper-slide swiper-slide--four">
+
+        <div>
+          <h2>La Ferrari</h2>
+          <p> El LaFerrari es el primer coche con tecnología híbrida en la historia de Maranello. El motor V12 de 6262cc ofrece 800 CV mientras que el motor eléctrico añade 120 KW (163 CV) para sumár más de 960 CV.</p>
+          <a href="La Ferrari.html" target="_blank">info</a>
+        </div>
+      </div>
+
+      <div class="swiper-slide swiper-slide--five">
+
+        <div>
+          <h2>Onix prisma lt</h2>
+          <p>Un sedán con diseño deportivo o un deportivo con el espacio de un sedán. La versión LTZ de Chevrolet Prisma cuenta con un motor 1.4l, 98 CV y caja manual de 5 velocidades.</p>
+          <a href="Onix.html" target="_blank">info</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="swiper-pagination"></div>
+  </div>
+  <img src="fondo de foro.png" alt="" class="bg">
+  
+</main>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
